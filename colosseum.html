@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Virtual Tour: Italy 360°</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            :root {
+                --max-width: 960px;
+                --padding: 1.5rem;
+                --bg-color: #f7f9fc;
+                --primary-color: #34495e;
+                --text-color: #333;
+            }
+
+            body {
+                margin: 0;
+                font-family: "Segoe UI", "Roboto", sans-serif;
+                background: var(--bg-color);
+                color: var(--text-color);
+            }
+
+            header {
+                background: var(--primary-color);
+                color: white;
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 1.8rem;
+            }
+
+            header p {
+                margin-top: 0.5rem;
+                font-size: 1rem;
+            }
+
+            .scene-container {
+                max-width: var(--max-width);
+                margin: 0 auto;
+                padding: var(--padding);
+            }
+
+            .scene {
+                margin-bottom: 2.5rem;
+            }
+
+            .scene h2 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: var(--primary-color);
+            }
+
+            .scene iframe {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                border: none;
+                border-radius: 12px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            }
+
+            @media (max-width: 600px) {
+                header h1 {
+                    font-size: 1.4rem;
+                }
+                .scene h2 {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>🇮🇹 Virtual Tour: Explore Italy in 360°</h1>
+            <p>Click and drag the views to explore Italian landmarks!</p>
+        </header>
+
+        <div class="scene-container">
+            <div class="scene">
+                <h2>Inside the Colosseum, Rome</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1694199285677!6m8!1m7!1sCAoSLEFGMVFpcE44TnRmWmF5NkE2TXNISW9SUUZGSHJCMWktVFRCS0xkVjd2LV9p!2m2!1d41.8902102!2d12.4922309!3f75!4f0!5f0.7820865974627469"
+                    allowfullscreen
+                >
+                </iframe>
+            </div>
+
+            <div class="scene">
+                <h2>Outside the Colosseum, Rome</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1747734558175!6m8!1m7!1s10koMpqS0T8wwmXhsWJjwQ!2m2!1d41.89069729198052!2d12.49380088845538!3f225.90401699358125!4f13.785246012221833!5f0.4000000000000002"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+            </div>
+        </div>
+    </body>
+</html>
