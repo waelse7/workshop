@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Italy Virtual Tour</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                font-family: sans-serif;
+                background: #f7f7f7;
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+            }
+            h1 {
+                color: #2c3e50;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                margin-top: 30px;
+            }
+            .card {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            a {
+                display: block;
+                margin-top: 10px;
+                text-decoration: none;
+                color: #3498db;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🇮🇹 Explore Italy in 360°</h1>
+        <p>Click a location to enter a virtual scene.</p>
+
+        <div class="grid">
+            <div class="card">
+                <div>🏛️ Colosseum</div>
+                <a href="colosseum.html">View Scene</a>
+            </div>
+            <div class="card">
+                <div>⛲ Trevi Fountain</div>
+                <a href="trevi.html">View Scene</a>
+            </div>
+            <div class="card">
+                <div>🗼 Pisa Tower</div>
+                <a href="pisa.html">View Scene</a>
+            </div>
+            <div class="card">
+                <div>🏟️ Arena di Verona</div>
+                <a href="verona.html">View Scene</a>
+            </div>
+        </div>
+    </body>
+</html>
