@@ -1,80 +1,62 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Italy Virtual Tour</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            body {
-                font-family: sans-serif;
-                background: #f7f7f7;
-                margin: 0;
-                padding: 20px;
-                text-align: center;
-            }
-            h1 {
-                color: #2c3e50;
-            }
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
-                margin-top: 30px;
-            }
-            .card {
-                background: white;
-                padding: 15px;
-                border-radius: 8px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            }
-            a {
-                display: block;
-                margin-top: 10px;
-                text-decoration: none;
-                color: #3498db;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Virtual Cultural Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .flag {
+        font-size: 48px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌍 Explore the World: Virtual Cultural Tour</h1>
+    <p>Click a country to start exploring its famous landmarks</p>
 
-  <h1>🇮🇹 Italy Virtual Tour</h1>
-  <p>Click any location to explore it in 360°</p>
-
-  <div class="grid">
-    <div class="card">
-      <div>Colosseum</div>
-      <a href="colosseum.html">View</a>
+    <div class="grid">
+      <div class="card">
+        <div class="flag">🇮🇹</div>
+        <div>Italy</div>
+        <a href="italy.html">Explore</a>
+      </div>
+      <div class="card">
+        <div class="flag">🇯🇵</div>
+        <div>Japan</div>
+        <a href="japan.html">Explore</a>
+      </div>
     </div>
-    <div class="card">
-      <div>Trevi Fountain</div>
-      <a href="trevi.html">View</a>
-    </div>
-    <div class="card">
-      <div>Leaning Tower of Pisa</div>
-      <a href="pisa.html">View</a>
-    </div>
-    <div class="card">
-      <div>Arena di Verona</div>
-      <a href="verona.html">View</a>
-    </div>
-    <div class="card">
-      <div>Florence Cathedral</div>
-      <a href="florence.html">View</a>
-    </div>
-    <div class="card">
-      <div>St. Peter’s Basilica</div>
-      <a href="vatican.html">View</a>
-    </div>
-    <div class="card">
-      <div>Milan Cathedral</div>
-      <a href="milan.html">View</a>
-    </div>
-    <div class="card">
-      <div>Roman Forum</div>
-      <a href="forum.html">View</a>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
